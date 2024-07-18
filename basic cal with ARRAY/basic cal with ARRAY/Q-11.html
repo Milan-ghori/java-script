@@ -1,0 +1,14 @@
+<script type="text/javascript">
+    var arr=[23,56,78,90,34,56,65,64,73,74,100];
+    var tmp;
+    for(var i=0;i<arr.length;i++){
+        for(var j=i+1;j<arr.length;j++){
+            if(arr[i]<arr[j]){
+                tmp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=tmp;
+            }
+        }
+    }
+    console.log(arr);
+</script>
